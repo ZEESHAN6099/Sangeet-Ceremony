@@ -7,7 +7,9 @@ const AudioControl: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
-    if (isAudioInitialized && audioRef.current) {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.1;
+      console.log("Audio initialized, playing:", isAudioPlaying);
       if (isAudioPlaying) {
         audioRef.current.play().catch(err => console.error("Audio playback failed:", err));
       } else {
@@ -22,7 +24,7 @@ const AudioControl: React.FC = () => {
       <audio
         ref={audioRef}
         loop
-        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" // Placeholder romantic instrumental
+        src="/ishq_sufiyana_female.mp3"
       />
       
       <button
