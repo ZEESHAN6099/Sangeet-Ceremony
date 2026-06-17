@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IMAGES } from '../utils/images';
-import { Music2 } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 const ArtistPerformance: React.FC = () => {
   const [imageMissing, setImageMissing] = useState(false);
@@ -18,11 +18,11 @@ const ArtistPerformance: React.FC = () => {
         <div className="mb-12 text-center">
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="h-px w-12 bg-gold" />
-            <Music2 className="text-gold w-8 h-8 animate-pulse" />
+            <Heart className="text-gold w-8 h-8 animate-pulse" />
             <div className="h-px w-12 bg-gold" />
           </div>
           <h2 className="font-cinzel text-3xl md:text-4xl text-gold tracking-[0.3em]">
-            SPECIAL PERFORMANCE
+            FAMILY CELEBRATION
           </h2>
         </div>
 
@@ -30,7 +30,7 @@ const ArtistPerformance: React.FC = () => {
           <div className="relative mx-auto w-full max-w-md group">
             <div className="absolute -inset-6 rounded-[2rem] bg-gold/15 blur-3xl transition-all duration-500 group-hover:bg-gold/25" />
             <div className="absolute inset-x-10 -top-5 z-20 rounded-full border border-gold/30 bg-maroon-dark/90 px-6 py-2 text-center shadow-lg backdrop-blur-md">
-              <p className="font-cinzel text-[11px] tracking-[0.45em] text-gold/80">LIVE PERFORMANCE</p>
+              <p className="font-cinzel text-[11px] tracking-[0.45em] text-gold/80">TOGETHER AS ONE</p>
             </div>
 
             <div className="relative rounded-[2rem] border border-gold/35 bg-gradient-to-b from-[#3a080d]/95 via-[#23080d]/95 to-[#120609]/95 p-4 shadow-[0_24px_60px_rgba(0,0,0,0.45)]">
@@ -41,8 +41,8 @@ const ArtistPerformance: React.FC = () => {
 
                   {!imageMissing ? (
                     <img
-                      src={IMAGES.AMANAT_ALI_LOCAL}
-                      alt="Amanat Ali"
+                      src={IMAGES.FAMILY_GATHERING}
+                      alt="Family Gathering"
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                       onError={() => {
                         setImageMissing(true);
@@ -51,7 +51,7 @@ const ArtistPerformance: React.FC = () => {
                   ) : (
                     <div className="flex aspect-[3/4] h-full w-full items-center justify-center bg-gradient-to-br from-maroon/70 to-black/70 px-8 text-center">
                       <p className="font-cinzel text-sm tracking-[0.25em] text-gold/70">
-                        ADD `amanat-ali.jpg` IN THE `public` FOLDER
+                        FAMILY IMAGE
                       </p>
                     </div>
                   )}
@@ -66,10 +66,10 @@ const ArtistPerformance: React.FC = () => {
                       <div className="h-px flex-1 bg-gradient-to-l from-transparent via-gold/35 to-gold/10" />
                     </div>
                     <h3 className="text-center font-cinzel text-3xl tracking-[0.28em] text-gold md:text-4xl">
-                      AMANAT ALI
+                      FAMILY LOVE
                     </h3>
                     <p className="mt-3 text-center font-cinzel text-xs tracking-[0.45em] text-gold-light/90">
-                      9:30 PM SHOWTIME
+                      CELEBRATING TOGETHER
                     </p>
                   </div>
                 </div>
@@ -80,25 +80,25 @@ const ArtistPerformance: React.FC = () => {
           <div className="space-y-7 text-center md:text-left">
             <div className="inline-flex items-center gap-3 rounded-full border border-gold/20 bg-gold/5 px-5 py-2 mx-auto md:mx-0">
               <div className="h-2 w-2 rounded-full bg-gold animate-pulse" />
-              <span className="font-cinzel text-[11px] tracking-[0.35em] text-gold/75">SPECIAL MUSICAL MOMENT</span>
+              <span className="font-cinzel text-[11px] tracking-[0.35em] text-gold/75">WHOLEsome FAMILY TIME</span>
             </div>
 
             <h4 className="font-playfair italic text-3xl text-gold md:text-4xl">
-              "A majestic voice of pure emotion"
+              "Where hearts unite and memories blossom"
             </h4>
 
             <p className="font-montserrat text-lg text-gold/80 leading-relaxed">
-             STIRRING EMBODIMENTS OF SOULFUL MELODIES AND CAPTIVATING RHYTHMS, HIS MUSIC ECHOES DEEP WITHIN THE HEART. AMANAT ALI BRINGS A TRULY MESMERIZING LIVE EXPERIENCE TO THE STAGE—AN ENCHANTING CELEBRATION OF MEMORIES, LEGENDARY MELODIES, AND PURE MUSICAL ENCHANTMENT.
+             A BEAUTIFUL EVENING FILLED WITH LAUGHTER, LOVE, AND THE WARMTH OF FAMILY. TOGETHER WE CELEBRATE THE BONDS THAT UNITE US, SHARING STORIES, CREATING NEW MEMORIES, AND CHERISHING THE PRECIOUS MOMENTS THAT MAKE LIFE TRULY SPECIAL.
             </p>
 
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="rounded-[1.5rem] border border-gold/15 bg-white/5 p-5 backdrop-blur-sm">
-                <p className="font-cinzel text-[11px] tracking-[0.35em] text-gold/60">ARTIST</p>
-                <p className="mt-3 font-playfair text-2xl text-gold-light">Amanat Ali</p>
+                <p className="font-cinzel text-[11px] tracking-[0.35em] text-gold/60">CELEBRATION</p>
+                <p className="mt-3 font-playfair text-2xl text-gold-light">Family Time</p>
               </div>
               <div className="rounded-[1.5rem] border border-gold/15 bg-white/5 p-5 backdrop-blur-sm">
-                <p className="font-cinzel text-[11px] tracking-[0.35em] text-gold/60">SHOWTIME</p>
-                <p className="mt-3 font-playfair text-2xl text-gold-light">9:30 PM</p>
+                <p className="font-cinzel text-[11px] tracking-[0.35em] text-gold/60">VIBE</p>
+                <p className="mt-3 font-playfair text-2xl text-gold-light">Wholesome</p>
               </div>
             </div>
 

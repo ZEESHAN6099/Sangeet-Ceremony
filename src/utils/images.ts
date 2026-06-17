@@ -14,4 +14,5 @@ export const IMAGES = {
   GUESTBOOK_BG: generateImageUrl('Opulent maroon draped curtains framing a clean elegant message board container, gold accents', 'landscape_16_9'),
   COUNTDOWN_BG: generateImageUrl('Beautiful architectural columns framing both sides looking out into a starry twilight vista with temple silhouettes', 'landscape_16_9'),
   MONOGRAM_BG: generateImageUrl('Elegant interlocking AI monogram in shimmering gold on a luxury velvet maroon background', 'square_hd'),
+  FAMILY_GATHERING: generateImageUrl('Warm family gathering celebration with loved ones together, elegant golden lighting, maroon and gold theme, wholesome atmosphere', 'portrait_4_3'),
 };
